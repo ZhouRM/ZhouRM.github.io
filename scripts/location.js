@@ -11,13 +11,25 @@ function BDmap(){
 	var point = new BMap.Point(116.331398,39.897445);
 	map.centerAndZoom(point,12);
 
-	function myFun(result){
-		var cityName = result.name;
-		map.setCenter(cityName);
-		alert("当前定位城市:"+cityName);
-	}
-	var myCity = new BMap.LocalCity();
-	myCity.get(myFun);
+// 	function myFun(result){
+// 		var cityName = result.name;
+// 		map.setCenter(cityName);
+// 		alert("当前定位城市:"+cityName);
+// 	}
+// 	var myCity = new BMap.LocalCity();
+// 	myCity.get(myFun);
+	var geolocation = new BMap.Geolocation();
+	geolocation.getCurrentPosition(function(r){
+		if(this.getStatus() == BMAP_STATUS_SUCCESS){
+			var mk = new BMap.Marker(r.point);
+			map.addOverlay(mk);
+			map.panTo(r.point);
+			alert('您的位置：'+r.point.lng+','+r.point.lat);
+		}
+		else {
+			alert('failed'+this.getStatus());
+		}        
+	},{enableHighAccuracy: true})
 }
 
 
