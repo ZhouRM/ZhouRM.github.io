@@ -117,7 +117,7 @@ function drawScene(){
     ctx.restore();
 }
 $(function(){
-    canvas=document.getElementById(canvas);
+    canvas=document.getElementById("drew");
     ctx=canvas.getContext('2d');
     clockImage=new Image();
     clockImage.src='images/';
