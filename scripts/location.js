@@ -30,13 +30,13 @@ function Canvas(){
 	radgrad4.addColorStop(0.9,'#E4C700');
 	radgrad4.addColorStop(1,'rgba(228,199,0,0)');
 	ctx.fillStyle=radgrad4;
-	ctx.fillRect(0,0,500,300);
+	ctx.fillRect(0,0,90%,300);
 	ctx.fillStyle=radgrad3;
-	ctx.fillRect(0,0,500,300);
+	ctx.fillRect(0,0,90%,300);
 	ctx.fillStyle=radgrad2;
-	ctx.fillRect(0,0,500,300);
+	ctx.fillRect(0,0,90%,300);
 	ctx.fillStyle=radgrad1;
-	ctx.fillRect(0,0,500,300);
+	ctx.fillRect(0,0,90%,300);
 }
 
 
