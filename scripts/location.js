@@ -1,7 +1,7 @@
-window.onload=function(){
-	BDmap();
-	Canvas();
-}
+// window.onload=function(){
+//     BDmap();
+//     Canvas();
+// }
 
 // 2D图形
 function Canvas(){
