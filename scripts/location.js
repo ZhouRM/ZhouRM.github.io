@@ -30,13 +30,13 @@ function Canvas(){
 	radgrad4.addColorStop(0.9,'#E4C700');
 	radgrad4.addColorStop(1,'rgba(228,199,0,0)');
 	ctx.fillStyle=radgrad4;
-	ctx.fillRect(0,0,90%,300);
+	ctx.fillRect(0,0,90%,200);
 	ctx.fillStyle=radgrad3;
-	ctx.fillRect(0,0,90%,300);
+	ctx.fillRect(0,0,90%,200);
 	ctx.fillStyle=radgrad2;
-	ctx.fillRect(0,0,90%,300);
+	ctx.fillRect(0,0,90%,200);
 	ctx.fillStyle=radgrad1;
-	ctx.fillRect(0,0,90%,300);
+	ctx.fillRect(0,0,90%,200);
 }
 
 
@@ -46,13 +46,6 @@ function BDmap(){
 	var point = new BMap.Point(116.331398,39.897445);
 	map.centerAndZoom(point,12);
 
-// 	function myFun(result){
-// 		var cityName = result.name;
-// 		map.setCenter(cityName);
-// 		alert("当前定位城市:"+cityName);
-// 	}
-// 	var myCity = new BMap.LocalCity();
-// 	myCity.get(myFun);
 	var geolocation = new BMap.Geolocation();
 	geolocation.getCurrentPosition(function(r){
 		if(this.getStatus() == BMAP_STATUS_SUCCESS){
