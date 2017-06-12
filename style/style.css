@@ -1980,9 +1980,9 @@ span.border.two:after {
 		padding: 6px 0;
 	}
 }
-#map,#drew,#cartoon{
+#map,#cartoon{
 	width: 90%;
 	height: 200px;
 	border: black 1px solid;
-	position: static;
+	//position: static;
 }
