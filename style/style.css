@@ -1975,7 +1975,7 @@ span.border.two:after {
 		padding: 6px 0;
 	}
 }
-#map,#cartoon{
+#map,#cartoon,#myCanvas{
 	width: 90%;
 	height: 200px;
 	border: black 1px solid;
