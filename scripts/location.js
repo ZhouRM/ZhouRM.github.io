@@ -1,11 +1,4 @@
-window.onload=function(){
-  Canvas();
-}
-
-// 2D图形
-
-function Canvas(){
-    var c = document.getElementById("myCanvas");
+var c = document.getElementById("myCanvas");
     var ctx = c.getContext("2d");
     ctx.fillStyle="rgb(200,0,0)";
     ctx.fillRect(10,10,55,50);
@@ -37,6 +30,3 @@ function Canvas(){
     ctx.fillRect(0,0,90%,200);
     ctx.fillStyle=radgrad1;
     ctx.fillRect(0,0,90%,200);
-}
-
-
