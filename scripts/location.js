@@ -5,13 +5,13 @@ window.onload=function(){
 
 // 2D图形
 function Canvas(){
-	var c = document.getElementById("drew");
+	var c = document.getElementById("myCanvas");
 	var ctx = c.getContext("2d");
-	ctx.beginPath();
-	ctx.arc(95,50,40,0.2*Math.PI);
-	ctx.stroke();
-	ctx.fillStyle="#FF0000";
-	ctx.fillRect(0,0,50,75);
+	ctx.fillStyle="rgb(200,0,0)";
+	ctx.fillRect(10,10,55,50);
+	
+	ctx.fillStyle="rgba(0,0,200,0.5)";
+	ctx.fillRect(30,30,55,50);
 }
 
 
